@@ -21,42 +21,61 @@
                 <h2>Update Data</h2>
                 <br>
 
-                <form action="/update/{{d.id}}" method="post">{% csrf_token %}
-
+                <form action="/update/{{d.id}}" method="post">
+                    {% csrf_token %}
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name" name="name" value="{{d.name}}" required>
+                        <h6>Full Name</h6>
+                        <input type="text" class="form-control" placeholder="Full name" name="name" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control  mt-2" placeholder="Email" name="email" value="{{d.email}}" required>
+                        <h6>Email Address</h6>
+                        <input type="email" class="form-control  mt-2" placeholder="Email" name="email" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="number" class="form-control  mt-2" placeholder="Age" name="age" value="{{d.age}}" required>
+                        <h6>Age</h6>
+                        <input type="number" class="form-control  mt-2" placeholder="Age" name="age" required>
 
                     </div>
 
 
                     <div class="form-group mt-2">
+                        <h6>Gender</h6>
                         <select id="gender" name="gender" class="form-control" required>
-                            <option selected>{{d.gender}}</option>
+                            <option selected>select gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control  mt-2" placeholder="country" name="country" value="{{d.country}}" required>
+                     <div class="form-group">
+                         <h6>Phone Number</h6>
+                        <input type="tel" class="form-control  mt-2" placeholder="Phone Number" name="phone" required>
+
+                    </div>
+                     <div class="form-group">
+                         <h6>ID Number</h6>
+                        <input type="number" class="form-control  mt-2" placeholder="Enter ID No." name="idnumber" required>
 
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control  mt-2" placeholder="city" name="city" value="{{d.city}}" required>
+                        <h6>Country</h6>
+                        <input type="text" class="form-control  mt-2" placeholder="Country" name="country" required>
 
                     </div>
+                    <div class="form-group">
+                        <h6>City</h6>
+                        <input type="text" class="form-control  mt-2" placeholder="City" name="city" required>
+
+                    </div>
+
 
                     <div class="d-grid gap-2">
 
                         <button class="btn btn-success mt-2" type="submit">Update</button>
                     </div>
+
+
 
 
 

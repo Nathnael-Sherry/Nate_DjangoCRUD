@@ -1,0 +1,19 @@
+body{
+    background-color: #708170;
+}
+
+.form{
+    background-color: yellowgreen;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+#trainee_list{
+    background-color: #000000;
+    color: white;
+
+}
+
+tbody{
+    color: white;
+}
