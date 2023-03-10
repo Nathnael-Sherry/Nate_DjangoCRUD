@@ -26,5 +26,6 @@ urlpatterns = [
     path('signup/', views.signup_page, name='signup'),
     path('insert', views.insertData, name='insertData'),
     path('delete/<id>', views.deleteData, name='deleteData'),
-    path('update/<id>', views.updateData, name='updateData')
+    path('update/<id>', views.updateData, name='updateData'),
+    path('pay/<id>', views.pay, name='pay')
 ]
