@@ -6,6 +6,7 @@ class Student(models.Model):
     email = models.EmailField()
     age = models.IntegerField()
     phone = models.IntegerField()
+    amount = models.IntegerField(default=1)
     gender = models.CharField(max_length=50, blank=False, null=False)
     country = models.CharField(max_length=50, default='Kenya')
     city = models.CharField(max_length=50, default='Nairobi')
